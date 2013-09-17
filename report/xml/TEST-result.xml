@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="mahmed4-ws" name="test.ForXML" skipped="0" tests="1" time="0.564" timestamp="2013-09-10T12:56:25">
+  <properties>
+    <property name="ant.project.invoked-targets" value="zip" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\bin" />
+    <property name="java.vm.version" value="1.6.0-b105" />
+    <property name="ant.library.dir" value="C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="test" value="Tech Mahindra" />
+    <property name="ant.file.type.TestAgainProj" value="file" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="C:\JuProj" />
+    <property name="lib" value="./lib" />
+    <property name="java.runtime.version" value="1.6.0-b105" />
+    <property name="bin" value="./bin" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="basedir" value="C:\JuProj\TestAgainProj" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\endorsed" />
+    <property name="os.arch" value="x86" />
+    <property name="ant.project.default-target" value="run" />
+    <property name="java.io.tmpdir" value="C:\Users\mahmed4\AppData\Local\Temp\" />
+    <property name="ant.core.lib" value="C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant.jar" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="user.variant" value="" />
+    <property name="os.name" value="Windows Vista" />
+    <property name="ant.home" value="C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt" />
+    <property name="ant.project.name" value="TestAgainProj" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Java\jdk1.6.0/bin;C:\app\product\11.1.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CREDANT\Shield v7.1\;C:\Program Files (x86)\SSH Communications Security\SSH Tectia\SSH Tectia AUX;C:\Program Files (x86)\SSH Communications Security\SSH Tectia\SSH Tectia AUX/Support binaries;C:\Program Files (x86)\SSH Communications Security\SSH Tectia\SSH Tectia Broker;C:\Program Files (x86)\SSH Communications Security\SSH Tectia\SSH Tectia Client;C:\Program Files (x86)\Java\jdk1.6.0\bin;C:\Program Files (x86)\apache-ant-1.9.0\bin" />
+    <property name="src" value="./src" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="os.version" value="6.1" />
+    <property name="ant.file" value="C:\JuProj\TestAgainProj\build.xml" />
+    <property name="user.home" value="C:\Users\mahmed4" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="user.name" value="mahmed4" />
+    <property name="java.class.path" value="C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-launcher.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-antlr.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-apache-bcel.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-apache-bsf.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-apache-log4j.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-apache-oro.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-apache-regexp.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-apache-resolver.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-apache-xalan2.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-commons-logging.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-commons-net.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-jai.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-javamail.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-jdepend.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-jmf.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-jsch.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-junit.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-junit4.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-launcher.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-netrexx.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-swing.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant-testutil.jar;C:\Users\mahmed4\.jenkins\tools\hudson.tasks.Ant_AntInstallation\ApacheAnt\lib\ant.jar;C:\Program Files (x86)\Java\jdk1.6.0\lib\tools.jar" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.6.0\jre" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="user.language" value="en" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.version" value="1.6.0" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\classes" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="file.separator" value="\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="report" value="./report" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="ant.file.type" value="file" />
+    <property name="sun.desktop" value="windows" />
+    <property name="ant.file.TestAgainProj" value="C:\JuProj\TestAgainProj\build.xml" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="test.ForXML" name="testTest" time="0.0090" />
+  <system-out><![CDATA[
+This is before class
+This is before class
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

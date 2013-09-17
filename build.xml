@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+   <project name="TestAgainProj" default="run" basedir=".">
+   	<property name ="test" value="Tech Mahindra"/>
+   	<property name = "src" value ="./src" />  
+   	<property name = "lib" value ="./lib" />  
+   	<property name = "bin" value ="./bin" />  
+    <property name="report" value="./report" />
+   	
+   	<target name="info">
+      <echo>Hello World - Welcome to Apache Ant!:: ${test}</echo>
+   </target>
+   	
+   	
+   	
+    <target name="init">
+       	<echo message = "Initializing build!..." level="info"/>
+           <delete dir="${bin}" />
+           <mkdir dir="${bin}" />
+       
+     </target>
+   	
+   	
+   	<target name="compile" depends="init">
+   	    	<echo message = "Compiling the source code!..." level="info"/>
+   	    	<!-- We are using java 1.6 as Java 7 as issue for creating the HTML reports from the Junit tests -->
+   	    	<!-- We will keep all the compile .class file in to bin folder -->
+   	        <javac source="1.6" srcdir="${src}" fork="true" destdir="${bin}" includeantruntime="yes">
+   	            <classpath>
+   	                <pathelement path="${bin}">
+   	                </pathelement>
+   	                <fileset dir="${lib}">
+   	                    <include name="**/*.jar" />
+   	                </fileset>
+   	            </classpath>
+   	        </javac>
+   	    	
+   	    </target>
+   	
+   	<target name="run1" depends="compile">
+   		<echo>Hello Jenkins</echo>
+   		
+   		<java fork="true" classname="test.GeneralTest" failonerror="true" >
+   			<classpath>
+                <pathelement path="${bin}">
+                </pathelement>
+                <fileset dir="${lib}">
+                    <include name="**/*.jar" />
+                </fileset>
+   			 </classpath>
+   		</java>
+   	</target>
+   	
+   	<target name="run" depends="compile">
+   	    	<echo message = "Running the Junit tests!..." level="info"/>
+   	        <!--delete dir="${report}" /-->
+   	        <mkdir dir="${report}" />
+   	        <mkdir dir="${report}/xml" />
+   	    	<echo message = "Deleted and created a new report folder!..." level="info"/>
+   	        <junit printsummary="yes" haltonfailure="no">
+   	            <classpath>
+   	                <pathelement location="${bin}" />
+   	                <fileset dir="${lib}">
+   	                    <include name="**/*.jar" />
+   	                </fileset>
+   	            </classpath>
+   	        	        	
+   	        	<!-- test task will run the junit test and create the xml report from the run!... -->
+   	            <test name="test.ForXML" haltonfailure="no" todir="${report}/xml" outfile="TEST-result">
+   	                <formatter type="xml" />
+   	            </test>
+   	        </junit>
+   	        <junitreport todir="${report}">
+   	        	<!-- junitreport task will run the html report from xml (stylesheet)!... -->
+   	            <fileset dir="${report}/xml">
+   	                <include name="TEST*.xml" />
+   	            </fileset>
+   	            <report format="frames" todir="${report}/html" />
+   	        	
+   	        	
+   	        	
+   	        </junitreport>
+   	    </target>	
+   		<target name="rep" depends="run" >
+   			<copy todir="C:\Users\mahmed4\.jenkins\workspace\TestAgainProj" >  
+		   	   <fileset dir="C:\JuProj\TestAgainProj\report" >
+    	   	  		<include name="*.xml"/>
+    	   		</fileset>
+   			</copy>
+   			<mkdir dir="C:\Users\mahmed4\.jenkins\workspace\TestAgainProj\GeneralTest"/>
+   			
+   			<copy todir="C:\Users\mahmed4\.jenkins\workspace\TestAgainProj\GeneralTest" >  
+		   	   <fileset dir="C:\JuProj\TestAgainProj" >
+    	   	  		<include name="*.xls"/>
+    	   		</fileset>
+   			</copy>
+   			
+   		</target>
+   	
+   	<target name="zip" depends="rep" >	
+   			<echo message = "Zipping the Test Report!..." level = "info"/>
+   			<zip destfile="./TestReport.rar">
+   				 <zipfileset dir="./report" />
+   				 <!--zipfileset file="./logfile.log" /-->
+   			</zip>
+   		
+   		<copy todir="C:\Users\mahmed4\.jenkins\workspace\TestAgainProj\GeneralTest" >  
+   				   	   <fileset dir="C:\JuProj\TestAgainProj" >
+   		    	   	  		<include name="*.rar"/>
+   		    	   		</fileset>
+   		   			</copy>
+   		</target>	
+   	
+</project>
